@@ -1,0 +1,75 @@
+c++ : 
+
+Topic :
+
+
+1. Header files : 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+=> It include all the standard files. and second line means we can directly use std cammand cin, cout instead of std::cout or std::cin.
+
+2. Inout and Output : 
+
+## I/p : Always a space between operator i.e cin >> a >> b;
+## O/P : Same with the output stream. i.e cout << a << b << "\n";
+
+Use of "\n" instead of endl because endl causes flush the stream everytime.
+
+
+## For fast input and output : Use ios::sync_with_stdio(0); cin.tie(0);
+
+## Reading and writing files : 
+
+	freopen("input.text", "r", stdin);
+	freopen("output.text", "w", stdout);
+	
+3. Working with Numbers :
+
+## Integers : mostly used int which consists of 32-bit : (-2^31 to 2^31) or (-2.10^9 to 2.10^9)	
+			  It not enough , use long long for 64-bit :    (-2^63 to 2^63) or (-9.10^18 to 9.10^18)
+			  e.g : long long x = 123456789123456789LL;          => suffix means it is a type of long long
+
+			  Don't assign int experesion to long long i.e long long x = a*a where a is int type.
+			  
+## Floating point :  mostly used printf("%.4f\n", x);    => it provides good precision over the no. of digits print after decimal point
+					 mostly used double of 64-bit and more accurately long double 80-bit long.
+					 
+					 
+## Modulo operator : x mod m = remainder . We mostly used modulo when we get large size of rseults so we can use modulo in that case to print the answer.
+					genarally divide with (mod 10^9+7 )	to remain in the belt of int and long long.				 
+
+## typedef : used to shorten the code, usually we shorten the data types 
+e.g: typedef long long ll
+	 typedef vector<int> vi;
+	 typedef pair<int,int> pi;
+
+## Macros : also used to shorten the code , used to short code by converting some strings before compilation.
+
+e.x : #define REP(i,a,n) for(int i=0; i<a; i <n)
+	  #define ff first
+	  #define ss second
+	  
+## Math Formula : 
+
+1. Sum of natural no. = n(n+1)/2             e.g : 1+2+3+4...tn
+
+2. Sum of squares of natural no. = n(n+1)(2n+1)/2           e.g: 1+2^2 + 3^2+ .......tn
+
+3. Arithematic Progression : Tn = a+(n-1)d , d = (Tn+1-Tn) = difference of two no.
+
+4. Geometric Progression Sum :  ratio between any two consecutive no. is constant. a+ak+ak^2+ak^3+....b = (bk-a)/(k-1)
+								Special Case : 1+2+4+8+....2^n-1 = 2^n-1
+					
+5. Harmonic Progresion : sum of reciprocal of all the natural no.    e.g:   1+1/2+1/3+1/4+...1/n = log(n)base2+1
+
+
+
+
+## Set Theory
+
+
+
+
+ 
